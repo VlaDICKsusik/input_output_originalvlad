@@ -75,10 +75,10 @@ def get_course_info(html):
         rating = "No rating yet"
 
     # .... parsing logic
-```
 
     return course_data
-	
+```	
+
 Что может произойти с кодом дальше?
 
 1. Если рейтинга нет — надо искать его на другом сайте.
