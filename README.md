@@ -21,7 +21,7 @@
 По условию задачи нужно скачать из сети данные об онлайн-курсах, выбрать из 
 них лучшие и сохранить результат в xlsx файл. Вот фрагмент кода:
 
-
+```Python
 def get_courses_list(courses_url):
     html = fetch_html(courses_url)
     if html:
@@ -30,7 +30,7 @@ def get_courses_list(courses_url):
     else:
         print("can't load list of courses")
         exit()
-
+```
 Теперь примерим на себя роль провидца и подумаем какой функционал потребуется 
 через месяц:
 
@@ -57,7 +57,7 @@ def get_courses_list(courses_url):
 хорошая идея. Жить будет легче если передать в `def get_courses_list` строку с HTML разметкой вместо `courses_url`. Вуаля, мы решили проблемы еще до их появления на горизонте!
 
 Пойдем дальше. Код другой функции:
-
+```Python
 def get_course_info(html):
     # ...  parsing logic
 
@@ -71,7 +71,7 @@ def get_course_info(html):
     # .... parsing logic
 
     return course_data
-
+```
 Что может произойти с кодом дальше?
 1. Если рейтинга нет — надо искать его на другом сайте.
 2. В xlsx указывать не просто отсутствие рейтинга, а еще на каких сайтах искал.
@@ -80,7 +80,7 @@ def get_course_info(html):
 Для всего этого нужно уметь отличать от прочих ситуацию "рейтинг неизвестен". В Python для этих целей предусмотрено значение `rating = None`. А строку "No rating yet" можно переместить туда где данные подготавливаются к выводу в xlsx.
 
 Та же функция, часть вторая, последняя:
-
+```Python
 def get_course_info(html):
     # ... more parsing logic is here
 
@@ -92,7 +92,7 @@ def get_course_info(html):
         '4_weeks': duration,
         "5_rating": rating
     }
-
+```
 Сразу возникают вопросы. А если нужна еще одна выгрузка в формате csv, с 
 другим порядком столбцов, как это сделать? Как заменить столбец `2_date` на 
 `days_before_start` ?
