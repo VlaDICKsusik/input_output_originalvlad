@@ -116,7 +116,10 @@ def get_course_info(html):
 
 1. от источника данных;
 2. от формата вывода в файл.
-Кроме того, часть кода удалось превратить в [чистые функции](https://devman.org/encyclopedia/decomposition/decomposition_pure_functions/), что облегчит 
+
+![image](https://github.com/user-attachments/assets/e45a8816-d94b-4421-a35c-7abbe7135c6c)
+
+Кроме того, часть кода удалось превратить в [чистые функции](https://devman.org/encyclopedia/decomposition/decomposition_pure_functions/), что облегчит
 тестирование и повторное использование.
 
 Стратегия по отделению операций ввода/вывода от обработки данных встречается 
