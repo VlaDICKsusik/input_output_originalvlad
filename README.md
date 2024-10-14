@@ -124,7 +124,7 @@ days_before_start ?
 1. от источника данных;
 2. от формата вывода в файл.
 
-[![Alt text](//placehold.it/150x100)]([https://dvmn.org/filer/canonical/1594117412/678/))
+![Image](//dvmn.org/filer/canonical/1594117412/678/150x100)
 
 Кроме того, часть кода удалось превратить в [чистые функции](https://devman.org/encyclopedia/decomposition/decomposition_pure_functions/), что облегчит 
 тестирование и повторное использование.
