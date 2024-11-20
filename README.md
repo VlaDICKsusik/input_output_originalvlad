@@ -21,7 +21,7 @@
 
 По условию задачи нужно скачать из сети данные об онлайн-курсах, выбрать из 
 них лучшие и сохранить результат в xlsx файл. Вот фрагмент кода:
-
+```
 def get_courses_list(courses_url):
     html = fetch_html(courses_url)
     if html:
@@ -30,6 +30,7 @@ def get_courses_list(courses_url):
     else:
         print("can't load list of courses")
         exit()
+```
 Теперь примерим на себя роль провидца и подумаем какой функционал потребуется 
 через месяц:
 
@@ -57,7 +58,7 @@ HTML разметкой вместо courses_url. Вуаля, мы решили 
 появления на горизонте!
 
 Пойдем дальше. Код другой функции:
-
+```
 def get_course_info(html):
     # ...  parsing logic
 
@@ -71,6 +72,7 @@ def get_course_info(html):
     # .... parsing logic
 
     return course_data
+```
 Что может произойти с кодом дальше?
 
 Если рейтинга нет — надо искать его на другом сайте.
