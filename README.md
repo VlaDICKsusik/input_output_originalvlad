@@ -76,6 +76,7 @@ def get_course_info(html):
 
     return course_data~
 Что может произойти с кодом дальше?
+~~~
 
 1. Если рейтинга нет — надо искать его на другом сайте.
 2. В xlsx указывать не просто отсутствие рейтинга, а еще на каких сайтах искал.
@@ -86,8 +87,8 @@ def get_course_info(html):
 rating yet" можно переместить туда где данные подготавливаются к выводу в xlsx.
 
 Та же функция, часть вторая, последняя:
-
-~def get_course_info(html):
+~~~
+def get_course_info(html):
     # ... more parsing logic is here
 
     # number prefix is usefull for simple sorting data before output to xlsx
