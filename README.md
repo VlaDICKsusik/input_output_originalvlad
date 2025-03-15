@@ -109,8 +109,11 @@ days_before_start ?
 2)от формата вывода в файл.
 
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 ![image](https://dvmn.org/filer/canonical/1594117412/678/)
 =======
+=======
+>>>>>>> Stashed changes
 
 ![image](https://dvmn.org/filer/canonical/1594117412/678/)
 
@@ -122,4 +125,7 @@ days_before_start ?
 крупных проектов. Это один из базовых приемов, нужно уверенно им владеть.
 
 
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
