@@ -101,7 +101,7 @@ def get_course_info(html):
         '2_date': start_date,
         '3_language': language,
         '4_weeks': duration,
-         "5_rating": rating
+        "5_rating": rating
     }
 ```
 Сразу возникают вопросы. А если нужна еще одна выгрузка в формате csv, с 
